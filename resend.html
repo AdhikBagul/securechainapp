@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+    <div class="mApp">
+        <section class="header fix-header">
+            <header class="header topbar">
+                <a href="" class="logo">
+                    <img src="img/SClogoHZWhite.png" alt="" srcset="" style="width: 180px;">
+                </a>
+              </header>
+        </section>
+        <section class="balance">
+            <div class="container-flex">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h5>
+                                    Please confirm your email
+                                </h5>
+                                <a href="login.html">Login Now</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="form">
+                                    <div> <p>Thanks for registering into SecureChain AI </p> <p><b>Please check your email and click the verification link. </b> </p> <p><mark> Please check the Spam / Junk folder if you do not see in email in inbox. </mark></p> </div>
+                                    <p><b>Didn't get anything yet? Submit your email to resend verification email.</b></p>
+                                    <form method="post" id="resend_form" onsubmit="return true;" action="https://securechain.ai/member/resend/submit"><p></p> <fieldset class="form-group"> <label class="mandatory">Your email</label> <div class="form-input"> <input type="email" id="email" name="email" class="form-control input-sm required"> </div> </fieldset> <fieldset class="form-group mt20"> <input type="hidden" name="gcaptcha" id="gcaptcha" class="gcaptcha" value=""> <button type="submit" id="btn-signup" class="btn btn-alt btn-full pull-right btnGSubmit" style="visibility: visible; border-radius: 50px !important;">Resend</button> </fieldset> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

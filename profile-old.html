@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body style="background: #ccc;">
+    <div class="mApp">
+        <section class="header fix-header" style="background-color: #fff;">
+            <header class="header topbar">
+                <a href="" class="logo">
+                    <img src="img/SClogoHZBlack.png" alt="" srcset="" style="width: 180px;">
+                </a>
+                <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                  <li><a href="#work">Our Work</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul> -->
+              </header>
+        </section>
+        <section class="dashboard-content">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-12 m-b-15">
+                        <div class="card">
+                            <div class="card-body"> 
+                                <h3 class="card-title"> 
+                                    <span class="lstick"></span>Update Profile &amp; Address 
+                                </h3> 
+                                <div class="row"> 
+                                    <div class="col-sm-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Gender</h5> 
+                                            <div class="controls"> 
+                                                <div class="checkbox-inline"> 
+                                                    <input type="radio" id="gender1" name="gender" value="1" checked=""> 
+                                                    <label for="gender1">Male</label> 
+                                                </div> 
+                                                <div class="checkbox-inline"> 
+                                                    <input type="radio" id="gender2" name="gender" value="2"> 
+                                                    <label for="gender2">Female</label> 
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-sm-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Date of Birth</h5> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-md-8 col-lg-6"> 
+                                                        <input type="date" id="dob" name="dob" class="form-control" value=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">First Name</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="firstname" name="firstname" class="form-control" value="Adhikbhai"> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Last Name</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="lastname" name="lastname" class="form-control" value=""> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-sm-12"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Address</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="address" name="address" class="form-control" value=""> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">City</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="city" name="city" class="form-control" value=""> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">State / Province</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="state" name="state" class="form-control" value=""> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Country</h5> 
+                                            <div class="controls"> 
+                                                <select id="country" name="country" class="custom-select">
+                                                    <option value="" selected="">Choose...</option>
+                                                    <option value="001" data-phone-code="+93">Afghanistan</option> 
+                                                    <option value="214" data-phone-code="+355">Albania</option> 
+                                                    <option value="002" data-phone-code="+213">Algeria</option> 
+                                                    <option value="003" data-phone-code="+1684">American Samoa</option> 
+                                                    <option value="004" data-phone-code="+376">Andorra</option> 
+                                                    <option value="240" data-phone-code="+244">Angola</option> 
+                                                    <option value="005" data-phone-code="+1-264">Anguilla</option> 
+                                                    <option value="006" data-phone-code="+672">Antarctica</option> 
+                                                    <option value="007" data-phone-code="+54">Argentina</option> 
+                                                    <option value="008" data-phone-code="+374">Armenia</option> 
+                                                    <option value="009" data-phone-code="+297">Aruba</option> 
+                                                    <option value="215" data-phone-code="+247">Ascension</option> 
+                                                    <option value="010" data-phone-code="+61">Australia</option> 
+                                                    <option value="216" data-phone-code="+672">Australian External Territories</option> 
+                                                    <option value="011" data-phone-code="+43">Austria</option> 
+                                                    <option value="012" data-phone-code="+994">Azerbaijan</option> 
+                                                    <option value="013" data-phone-code="+1-242">Bahamas</option> 
+                                                    <option value="014" data-phone-code="+973">Bahrain</option> 
+                                                    <option value="015" data-phone-code="+880">Bangladesh</option> 
+                                                    <option value="016" data-phone-code="+1-246">Barbados</option> 
+                                                    <option value="017" data-phone-code="+375">Belarus</option> 
+                                                    <option value="018" data-phone-code="+32">Belgium</option> 
+                                                    <option value="019" data-phone-code="+501">Belize</option> 
+                                                    <option value="020" data-phone-code="+229">Benin</option> 
+                                                    <option value="021" data-phone-code="+1-441*">Bermuda</option> 
+                                                    <option value="022" data-phone-code="+975">Bhutan</option> 
+                                                    <option value="023" data-phone-code="+591">Bolivia</option> 
+                                                    <option value="024" data-phone-code="+387">Bosnia &amp; Herzegovina</option> 
+                                                    <option value="025" data-phone-code="+267">Botswana</option> 
+                                                    <option value="027" data-phone-code="+55">Brazil</option> 
+                                                    <option value="026" data-phone-code="+1-284*">British Virgin Islands</option> 
+                                                    <option value="028" data-phone-code="+673*">Brunei Darussalam</option> 
+                                                    <option value="029" data-phone-code="+359">Bulgaria</option> 
+                                                    <option value="030" data-phone-code="+226">Burkina Faso</option> 
+                                                    <option value="031" data-phone-code="+257">Burundi</option> 
+                                                    <option value="032" data-phone-code="+855">Cambodia</option> 
+                                                    <option value="033" data-phone-code="+237">Cameroon</option> 
+                                                    <option value="034" data-phone-code="+1">Canada</option> 
+                                                    <option value="036" data-phone-code="+238">Cape Verde Islands</option> 
+                                                    <option value="037" data-phone-code="+1-345*">Cayman Islands</option> 
+                                                    <option value="038" data-phone-code="+236">Central African Republic</option> 
+                                                    <option value="039" data-phone-code="+235">Chad</option> 
+                                                    <option value="217" data-phone-code="+64">Chatham Islands (New Zealand)</option> 
+                                                    <option value="041" data-phone-code="+56">Chile</option> 
+                                                    <option value="042" data-phone-code="+86">China</option> 
+                                                    <option value="040" data-phone-code="+61">Christmas Island</option> 
+                                                    <option value="043" data-phone-code="+57">Colombia</option> 
+                                                    <option value="218" data-phone-code="+269">Comoros</option> 
+                                                    <option value="044" data-phone-code="+242">Congo</option> 
+                                                    <option value="219" data-phone-code="+243">Congo (Democratic Republic of)</option> 
+                                                    <option value="045" data-phone-code="+682">Cook Islands</option> 
+                                                    <option value="046" data-phone-code="+506">Costa Rica</option> 
+                                                    <option value="047" data-phone-code="+225">Cote Divorce (Ivory Coast)</option> 
+                                                    <option value="048" data-phone-code="+385">Croatia</option> 
+                                                    <option value="049" data-phone-code="+53">Cuba</option> 
+                                                    <option value="050" data-phone-code="+357">Cyprus</option> 
+                                                    <option value="051" data-phone-code="+420">Czech Republic</option> 
+                                                    <option value="052" data-phone-code="+45">Denmark</option> 
+                                                    <option value="220" data-phone-code="+246">Diego Garcia</option> 
+                                                    <option value="053" data-phone-code="+253">Djibouti</option> 
+                                                    <option value="054" data-phone-code="+1-767*">Dominica</option> 
+                                                    <option value="055" data-phone-code="+1-809*">Dominican Republic</option> 
+                                                    <option value="221" data-phone-code="+670">East Timor</option> 
+                                                    <option value="222" data-phone-code="+56">Easter Island</option> 
+                                                    <option value="056" data-phone-code="+593">Ecuador</option> 
+                                                    <option value="057" data-phone-code="+20">Egypt</option> 
+                                                    <option value="223" data-phone-code="+353">Eire</option> 
+                                                    <option value="058" data-phone-code="+503">El Salvador</option> 
+                                                    <option value="059" data-phone-code="+240">Equatorial Guinea</option> 
+                                                    <option value="060" data-phone-code="+291">Eritrea</option> 
+                                                    <option value="061" data-phone-code="+372">Estonia</option> 
+                                                    <option value="062" data-phone-code="+251">Ethiopia</option> 
+                                                    <option value="224" data-phone-code="+500">Falkland Islands</option> 
+                                                    <option value="063" data-phone-code="+298">Faroe Islands</option> 
+                                                    <option value="064" data-phone-code="+679">Fiji Islands</option> 
+                                                    <option value="065" data-phone-code="+358">Finland</option> 
+                                                    <option value="066" data-phone-code="+33">France</option> 
+                                                    <option value="225" data-phone-code="+596">French Antilles</option> 
+                                                    <option value="067" data-phone-code="+594">French Guiana</option> 
+                                                    <option value="068" data-phone-code="+689">French Polynesia</option> 
+                                                    <option value="069" data-phone-code="+241">Gabonese Republic</option> 
+                                                    <option value="070" data-phone-code="+220">Gambia</option> 
+                                                    <option value="071" data-phone-code="+995">Georgia</option> 
+                                                    <option value="072" data-phone-code="+49">Germany</option> 
+                                                    <option value="073" data-phone-code="+233">Ghana</option> 
+                                                    <option value="074" data-phone-code="+350">Gibraltar</option> 
+                                                    <option value="075" data-phone-code="+30">Greece</option> 
+                                                    <option value="076" data-phone-code="+299">Greenland</option> 
+                                                    <option value="077" data-phone-code="+1-473">Grenada</option> 
+                                                    <option value="078" data-phone-code="+590">Guadeloupe</option> 
+                                                    <option value="079" data-phone-code="+1-671*">Guam</option> 
+                                                    <option value="080" data-phone-code="+502">Guatemala</option> 
+                                                    <option value="081" data-phone-code="+224">Guinea</option> 
+                                                    <option value="082" data-phone-code="+245">Guinea Bissau</option> 
+                                                    <option value="083" data-phone-code="+592">Guyana</option> 
+                                                    <option value="084" data-phone-code="+509">Haiti</option> 
+                                                    <option value="085" data-phone-code="+504">Honduras</option> 
+                                                    <option value="086" data-phone-code="+852">Hong Kong</option> 
+                                                    <option value="087" data-phone-code="+36">Hungary</option> 
+                                                    <option value="088" data-phone-code="+354">Iceland</option> 
+                                                    <option value="089" data-phone-code="+91">India</option> 
+                                                    <option value="090" data-phone-code="+62">Indonesia</option> 
+                                                    <option value="091" data-phone-code="+98">Iran</option> 
+                                                    <option value="092" data-phone-code="+964">Iraq</option> 
+                                                    <option value="093" data-phone-code="+353">Ireland</option> 
+                                                    <option value="094" data-phone-code="+972">Israel</option> 
+                                                    <option value="095" data-phone-code="+39">Italy</option> 
+                                                    <option value="097" data-phone-code="+1-876*">Jamaica</option> 
+                                                    <option value="098" data-phone-code="+81">Japan</option> 
+                                                    <option value="099" data-phone-code="+962">Jordan</option> 
+                                                    <option value="100" data-phone-code="+7">Kazakhstan</option> 
+                                                    <option value="101" data-phone-code="+254">Kenya</option> 
+                                                    <option value="103" data-phone-code="+686">Kiribati</option> 
+                                                    <option value="102" data-phone-code="+850">Korea (North)</option> 
+                                                    <option value="212" data-phone-code="+82">Korea (South)</option> 
+                                                    <option value="104" data-phone-code="+965">Kuwait</option> 
+                                                    <option value="226" data-phone-code="+996">Kyrgyz Republic</option> 
+                                                    <option value="105" data-phone-code="+856">Laos</option> 
+                                                    <option value="106" data-phone-code="+371">Latvia</option> 
+                                                    <option value="107" data-phone-code="+961">Lebanon</option> 
+                                                    <option value="108" data-phone-code="+266">Lesotho</option> 
+                                                    <option value="109" data-phone-code="+231">Liberia</option> 
+                                                    <option value="213" data-phone-code="+218">Libya</option> 
+                                                    <option value="110" data-phone-code="+423">Liechtenstein</option> 
+                                                    <option value="111" data-phone-code="+370">Lithuania</option> 
+                                                    <option value="112" data-phone-code="+352">Luxembourg</option> 
+                                                    <option value="113" data-phone-code="+853">Macao</option> 
+                                                    <option value="114" data-phone-code="+389">Macedonia</option> 
+                                                    <option value="115" data-phone-code="+261">Madagascar</option> 
+                                                    <option value="116" data-phone-code="+265">Malawi</option> 
+                                                    <option value="117" data-phone-code="+60">Malaysia</option> 
+                                                    <option value="118" data-phone-code="+960">Maldives</option> 
+                                                    <option value="119" data-phone-code="+223">Mali Republic</option> 
+                                                    <option value="120" data-phone-code="+356">Malta</option> 
+                                                    <option value="121" data-phone-code="+692">Marshall Islands</option> 
+                                                    <option value="122" data-phone-code="+596">Martinique</option> 
+                                                    <option value="123" data-phone-code="+222">Mauritania</option> 
+                                                    <option value="124" data-phone-code="+230">Mauritius</option> 
+                                                    <option value="227" data-phone-code="+269">Mayotte Island</option> 
+                                                    <option value="125" data-phone-code="+52">Mexico</option> 
+                                                    <option value="126" data-phone-code="+691">Micronesia</option> 
+                                                    <option value="127" data-phone-code="+373">Moldova</option> 
+                                                    <option value="128" data-phone-code="+377">Monaco</option> 
+                                                    <option value="129" data-phone-code="+976">Mongolia</option> 
+                                                    <option value="228" data-phone-code="+382">Montenegro</option> 
+                                                    <option value="130" data-phone-code="+1-664*">Montserrat</option> 
+                                                    <option value="131" data-phone-code="+212">Morocco</option> 
+                                                    <option value="132" data-phone-code="+258">Mozambique</option> 
+                                                    <option value="133" data-phone-code="+95">Myanmar</option> 
+                                                    <option value="134" data-phone-code="+264">Namibia</option> 
+                                                    <option value="229" data-phone-code="+674">Nauru</option> 
+                                                    <option value="135" data-phone-code="+977">Nepal</option> 
+                                                    <option value="136" data-phone-code="+31">Netherlands</option> 
+                                                    <option value="137" data-phone-code="+599">Netherlands Antilles</option> 
+                                                    <option value="230" data-phone-code="+1-869*">Nevis</option> 
+                                                    <option value="138" data-phone-code="+687">New Caladonia</option> 
+                                                    <option value="139" data-phone-code="+64">New Zealand</option> 
+                                                    <option value="140" data-phone-code="+505">Nicaragua</option> 
+                                                    <option value="141" data-phone-code="+227">Niger</option> 
+                                                    <option value="142" data-phone-code="+234">Nigeria</option> 
+                                                    <option value="231" data-phone-code="+683">Niue</option> 
+                                                    <option value="232" data-phone-code="+672">Norfolk Island</option> 
+                                                    <option value="143" data-phone-code="+1-670*">Northern Mariana Ialands</option> 
+                                                    <option value="144" data-phone-code="+47">Norway</option> 
+                                                    <option value="145" data-phone-code="+968">Oman</option> 
+                                                    <option value="146" data-phone-code="+92">Pakistan</option> 
+                                                    <option value="147" data-phone-code="+680">Palau</option> 
+                                                    <option value="148" data-phone-code="+507">Panama</option> 
+                                                    <option value="149" data-phone-code="+675">Papua New Guinea</option> 
+                                                    <option value="150" data-phone-code="+595">Paraguay</option> 
+                                                    <option value="151" data-phone-code="+51">Peru</option> 
+                                                    <option value="152" data-phone-code="+63">Philippines</option> 
+                                                    <option value="233" data-phone-code="+48">Poland</option> 
+                                                    <option value="153" data-phone-code="+351">Portugal</option> 
+                                                    <option value="154" data-phone-code="+1-787">Puerto Rico</option> 
+                                                    <option value="155" data-phone-code="+974">Qatar</option> 
+                                                    <option value="156" data-phone-code="+262">Reunion Island</option> 
+                                                    <option value="157" data-phone-code="+40">Romania</option> 
+                                                    <option value="158" data-phone-code="+7">Russia</option> 
+                                                    <option value="159" data-phone-code="+250">Rwanda</option> 
+                                                    <option value="160" data-phone-code="+378">San Marino</option> 
+                                                    <option value="234" data-phone-code="+239">Sao Tomo &amp; Principe</option> 
+                                                    <option value="161" data-phone-code="+966">Saudi Arabia</option> 
+                                                    <option value="162" data-phone-code="+221">Senegal</option> 
+                                                    <option value="163" data-phone-code="+381">Serbia</option> 
+                                                    <option value="235" data-phone-code="+248">Seychelles Republic</option> 
+                                                    <option value="164" data-phone-code="+232">Sierra Leone</option> 
+                                                    <option value="165" data-phone-code="+65">Singapore</option> 
+                                                    <option value="166" data-phone-code="+421">Slovak Replublic</option> 
+                                                    <option value="167" data-phone-code="+386">Slovenia</option> 
+                                                    <option value="168" data-phone-code="+677">Solomon lslands</option> 
+                                                    <option value="170" data-phone-code="+252">Somalia</option> 
+                                                    <option value="169" data-phone-code="+27">South Africa</option> 
+                                                    <option value="171" data-phone-code="+34">Spain</option> 
+                                                    <option value="172" data-phone-code="+94">Sri Lanka</option> 
+                                                    <option value="237" data-phone-code="+290">St. Helena</option> 
+                                                    <option value="173" data-phone-code="+1-869*">St. Kitts / Nevis</option> 
+                                                    <option value="174" data-phone-code="+1-758*">St. Lucia</option> 
+                                                    <option value="238" data-phone-code="+508">St. Pierre &amp; Miquelon</option> 
+                                                    <option value="175" data-phone-code="+1-784*">St. Vincent &amp; Grenadines</option> 
+                                                    <option value="236" data-phone-code="+249">Sudan</option> 
+                                                    <option value="176" data-phone-code="+597">Suriname</option> 
+                                                    <option value="177" data-phone-code="+268">Swaziland</option> 
+                                                    <option value="178" data-phone-code="+46">Sweden</option> 
+                                                    <option value="179" data-phone-code="+41">Switzerland</option> 
+                                                    <option value="180" data-phone-code="+963">Syria</option> 
+                                                    <option value="181" data-phone-code="+886">Taiwan</option> 
+                                                    <option value="182" data-phone-code="+992">Tajikistan</option> 
+                                                    <option value="183" data-phone-code="+255">Tanzania</option> 
+                                                    <option value="184" data-phone-code="+66">Thailand</option> 
+                                                    <option value="185" data-phone-code="+228">Togolese Republic</option> 
+                                                    <option value="239" data-phone-code="+690">Tokelau</option> 
+                                                    <option value="186" data-phone-code="+676">Tonga Islands</option> 
+                                                    <option value="187" data-phone-code="+1-868">Tromodad &amp; Tobago</option> 
+                                                    <option value="188" data-phone-code="+216">Tunisia</option> 
+                                                    <option value="189" data-phone-code="+90">Turkey</option> 
+                                                    <option value="190" data-phone-code="+993">Turkmenistan</option> 
+                                                    <option value="191" data-phone-code="+1">Turks &amp; Caicos Islands</option> 
+                                                    <option value="192" data-phone-code="+688">Tuvalu</option> 
+                                                    <option value="193" data-phone-code="+256">Uganda</option> 
+                                                    <option value="194" data-phone-code="+380">Ukraine</option> 
+                                                    <option value="195" data-phone-code="+971">United Arab Emirates</option> 
+                                                    <option value="196" data-phone-code="+44">United Kingdom</option> 
+                                                    <option value="198" data-phone-code="+598">Uruguay</option> 
+                                                    <option value="199" data-phone-code="+1-340*">US Virgin Islands</option> 
+                                                    <option value="197" data-phone-code="+1">USA</option> 
+                                                    <option value="200" data-phone-code="+998">Uzbekistan</option> 
+                                                    <option value="201" data-phone-code="+678">Vanuatu</option> 
+                                                    <option value="202" data-phone-code="+58">Venezuela</option> 
+                                                    <option value="203" data-phone-code="+84">Vietnam</option> 
+                                                    <option value="207" data-phone-code="+997">Yemen</option> 
+                                                    <option value="210" data-phone-code="+260">Zambia</option> 
+                                                    <option value="211" data-phone-code="+263">Zimbabwe</option> 
+                                                </select> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <h5 class="mandatory">Zip Code</h5> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-sm-6 col-md-8 col-lg-6"> 
+                                                        <input type="text" id="zipcode" name="zipcode" class="form-control" value=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-sm-12"> 
+                                        <div class="form-group"> 
+                                            <h5> Metamask or Trust wallet address (ERC20 / BEP20)</h5> 
+                                            <div class="controls"> 
+                                                <input type="text" id="tronWallet" name="tronWallet" class="form-control" value=""> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-sm-6 col-md-8 col-lg-6"> 
+                                                        <input type="hidden" id="squestion1" name="squestion1" class="form-control" value="1" enable=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-sm-6 col-md-8 col-lg-6"> 
+                                                        <input type="hidden" id="squestion2" name="squestion2" class="form-control" value="2" enable=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-sm-6 col-md-8 col-lg-6"> 
+                                                        <input type="hidden" id="answwer1" name="answwer1" class="form-control" value="1" enable=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-6"> 
+                                        <div class="form-group"> 
+                                            <div class="controls"> 
+                                                <div class="row"> 
+                                                    <div class="col-sm-6 col-md-8 col-lg-6"> 
+                                                        <input type="hidden" id="answwer2" name="answwer2" class="form-control" value="2" enable=""> 
+                                                    </div> 
+                                                </div> 
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <hr> 
+                                <div class="label label-light-inverse label-lg"> 
+                                    <p><strong>Please remember:</strong><br>Once you upload your details and documents, it will be under review for activation and we will let you know very soon.</p> 
+                                </div> 
+                                <div class="buttons"> 
+                                    <button type="submit" id="submit" class="btn btn-success">Submit Profile</button> 
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+    </div>
+</body>
+</html>
