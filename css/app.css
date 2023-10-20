@@ -746,6 +746,7 @@ body {
 .dashboard-content{
   /* text-align: center; */
   padding-top: 15px;
+  padding-bottom: 100px;
 }
 .btn-success.ref-code {
   color: #fff;
@@ -947,6 +948,8 @@ html body .m-b-5 {
   width: 100%;
   bottom: 0;
   padding: 15px 0;
+  left: 0;
+  right: 0;
 }
 
 .list-container{  
@@ -1008,13 +1011,19 @@ html body .m-b-5 {
 #horz-list ul li a span{
   display: grid;
 }
+
+#horz-list ul li a span:first-child{
+  font-size: 24px;
+}
+
 #horz-list ul li:last-child a {
   border: none;
 }
 
 #horz-list ul li a:hover {
   background: rgba(255, 255, 255, 0.8);
-  color: #1a1a1a;
+  color: #007bff;;
+
 }
 
 /* Earning page */
@@ -1034,6 +1043,8 @@ html body .m-b-5 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   display: table;
 }
+
+
 @media screen and (max-width: 580px) {
   .table {
     display: block;
@@ -1091,7 +1102,7 @@ body {
 
 .card-wrapper {
   min-height: 100vh;
-  padding-bottom: 50px; /* footer fixed */
+  padding-bottom: 100px; /* footer fixed */
   padding-top: 25px;
 }
 
@@ -1235,6 +1246,119 @@ input.tgg-title {
 .topbar{
   box-shadow: 0 1px 5px rgb(1 149 255);
 }
+
+.reset-password{
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+.btn-receive-send{
+  text-align: center;
+}
+.btn-receive-send .receive-send{
+  width: 140px!important;
+}
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group.default-input-group .form-control {
+  border-right: 0;
+}
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.input-group .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(204, 204, 204);
+  border-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.input-group-addon, .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}
+.input-group.default-input-group .form-control + .input-group-btn .btn {
+  border-left: 0;
+}
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+  margin-left: -1px;
+}
+.input-group-btn > .btn {
+  position: relative;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+    border-left-color: rgb(204, 204, 204);
+}
+
+.btn.btn-default {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* tabs start css */
+
+
 
 @media screen and (max-width: 425px) {
   .row-table {
