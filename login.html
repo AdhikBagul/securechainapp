@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     
 </head>
-<body>
+<body style="background: #f1f1f1;">
     <div class="mApp">
         <section class="header fix-header">
-            <header class="header topbar">
+            <header class="header topbar bg-light">
                 <a href="" class="logo">
-                    <img src="img/SClogoHZWhite.png" alt="" srcset="" style="width: 180px;">
+                    <img src="img/SClogoHZBlack.png" alt="" srcset="" style="width: 180px;">
                 </a>
               </header>
         </section>
-        <section class="balance">
+        <section class="balance pt-3">
             <div class="container-flex">
                 <div class="row">
                     <div class="col-md-12">
@@ -33,7 +34,7 @@
                                     <form id="login-form" name="login_form" method="post" onsubmit="return true;" action="https://securechain.ai/member/sign_in/auth" novalidate="novalidate">
                                         <fieldset class="form-group"> Don’t have an account? 
                                             <span style="margin: 0px;">
-                                                <a href="javascript:;" id="do-signup" data-toggle="modal" data-target="#signup-pop" style="color: #46bdf4;float: none; padding: 0px!important; margin: 0px;font-size: 16px;">Sign up here!</a>
+                                                <a href="register.html" id="do-signup" data-toggle="modal" data-target="#signup-pop" style="color: #46bdf4;float: none; padding: 0px!important; margin: 0px;font-size: 16px;">Sign up here!</a>
                                             </span> 
                                         </fieldset> 
                                         <label id="result-login" class="result"></label> 
@@ -54,9 +55,9 @@
                                                 Remember Me<br>
                                             </div> 
                                             <fieldset class="form-group"> 
-                                                <a href="javascript:;" id="forgot" data-toggle="modal" data-target="#forgot-pop"> Forgot Password? </a><br> <a href="#"> Resend Verification Email? </a> 
+                                                <a href="forgot_password.html" id="forgot"> Forgot Password? </a><br> <a href="resend.html"> Resend Verification Email? </a> 
                                                 <input type="hidden" name="gcaptcha" id="gcaptcha" value="" class="gcaptcha"> 
-                                                <button type="submit" id="btn-login" class="btn btn-alt btn-full pull-right btnGSubmit" style="visibility: visible; border-radius: 50px !important;" fdprocessedid="bg5ug9">Sign in</button> 
+                                                <button type="submit" id="btn-login" class="btn btn-alt btn-full pull-right btnGSubmit btn-sm" style="visibility: visible; border-radius: 50px !important;" fdprocessedid="bg5ug9">Sign in</button> 
                                             </fieldset> 
                                         </form>
                                 </div>

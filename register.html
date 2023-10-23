@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     
 </head>
-<body>
+<body style="background: #f1f1f1;">
     <div class="mApp">
         <section class="header fix-header">
             <header class="header topbar">
                 <a href="" class="logo">
-                    <img src="img/SClogoHZWhite.png" alt="" srcset="" style="width: 180px;">
+                    <img src="img/SClogoHZBlack.png" alt="" srcset="" style="width: 180px;">
                 </a>
               </header>
         </section>
-        <section class="balance">
+        <section class="balance pt-3">
             <div class="container-flex">
                 <div class="row">
                     <div class="col-md-12">
@@ -30,7 +31,68 @@
                             </div>
                             <div class="card-body">
                                 <div class="form">
-                                    <form method="post" id="signup_form" onsubmit="return true;" action="https://securechain.ai/member/sign-up/submit"> <!--form id="signup-form" name="signup_form" method="post" onsubmit="return false;"--> <fieldset class="form-group"> Already have an account? <a href="/member" style="color: #46bdf4;">Sign in here!</a> </fieldset> <label id="result-signup" class="result"></label> <fieldset class="form-group"> <label class="mandatory">Your Name</label> <div class="form-input"> <input type="text" id="sfirstname" name="firstname" class="form-control input-sm required" required=""> </div> </fieldset> <fieldset class="form-group" hidden=""> <label class="mandatory">Last Name</label> <div class="form-input"> <input type="text" id="slastname" value="x" name="lastname" class="form-control input-sm"> </div> </fieldset> <fieldset class="form-group"> <label class="mandatory">Your email</label> <div class="form-input"> <input type="email" id="email" name="email" class="form-control input-sm required" pattern="^[^+]+@[^+]+\.[^+]+$" required=""> </div> </fieldset> <fieldset class="form-group"> <label class="mandatory">Password</label> <div class="form-input"> <input type="password" id="spassword" name="spassword" class="form-control input-sm" title="Set a strong password" value=""> <span toggle="#spassword" class="fa fa-fw fa-eye field-icon toggle-password"></span> </div> </fieldset> <div id="message" hidden=""> <p style="color:red">Password must contain the following:</p> <p id="letter" class="invalid">A <b>lowercase</b> letter</p> <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p> <p id="number" class="invalid">A <b>number</b></p> <p id="length" class="invalid">Minimum <b>8 characters</b></p> </div> <fieldset class="form-group" hidden=""> <label class="mandatory">Re-enter Password</label> <div class="form-input"> <input type="password" id="scpassword" name="scpassword" class="form-control input-sm" value="xX000000"> <span toggle="#scpassword" class="fa fa-fw fa-eye field-icon toggle-password"></span> </div> </fieldset> <fieldset class="form-group"> <label>Referral Code</label> <div class="form-input"> <input type="text" id="refer" name="refer" maxlength="10" placeholder="10 digits" class="form-control input-sm"> <label id="result-refer" class="error"></label> </div> </fieldset> <!-- <div class="form-group"> <div class="g-recaptcha" style="margin-left: 15px; margin-top: 10px;" data-sitekey="6LcPsoEnAAAAAHIdQeFz4kDPkuiFrMdXJ_k4efam"></div> </div> --> <div hidden=""><input type="checkbox" name="t&amp;c" style="height:15px; width:15px;" checked="" hidden=""> I have read, understood and agreed <a href="/adminx/homepage_video/front_page_toc.pdf" target="_blank">Terms and Conditions</a></div> <!-- <center><div class="g-recaptcha" data-sitekey="6LcPsoEnAAAAAHIdQeFz4kDPkuiFrMdXJ_k4efam" style="margin-top: 15px;"></div></center> --> <fieldset class="form-group mt20"> <input type="hidden" name="gcaptcha" id="gcaptcha" class="gcaptcha" value="03AFcWeA4Wl40Dj9AhXKXZDYiWa9X7lyVBvNEpgcHj9Jl9PtXCYUk3Tm3Gy439yhw8M4f32tSbsPXzsCtTw7W912dnG5KeWFQUeoeXCefqcpsBJ8KKla3tmoaUN3RI89H_y_xfB8ja1LWuX_I8K73YkwrS1FxBj_h5DpaHMtnDlg-pBjDEvrmib4J91Mn7oitQBFzamTrUypk0W4N-8ERs4a_FT5pAPN3uivB0a2Z8VDd3FRbuyE0H8caXFfifNxNy8_tYKSjuxluClxoQtxIiMgitvXaYyX6j5Xbiyp2hJnD-a9Na2pbWsCsDfXw_sSal1zcGtWdudcFBqsl7P2wzoft8gn4Odq7qzFxmy2E1DVjHQYpud2rMWVp2Xf_5p_US8FoV6AOYWGf45pu1qAPbTPeGAbPJz6Q2vqhTVYVhEY4C-KQVUeCJqwDuPQlteRYITLpOe60mh2NsGrTxFdgl7GUqWpjwmzle80IxE-r9Gwhi-vW8OZ9ULUPHpIkn_DYm35tGl63e-FZTP3K93Nd2v8VEDc4Xho3K6DzPGduu0dSfbX1fYA_DxG_NbnUbR9bSvCGLmKgMREGgh-mKzqQpB2D1Ft3aQ2CVoh36rAJPN1zTQ79jGgnSJ8AJClN19bY38dvJZdhk2kVD1nXoKITHBSXlWM2GpxyKB42WWqtPd4xCuGV5AK9rpMN2F-VzMOdl0EkZdf3C3wNuLPNDFQAx6GQEay6HalShHOIg5WqCHUh5Sh-eZ-lWUiMnTX3Bw3-fPIayKgaks8GRWMZ8tIO5PcUk4G4S2kf7XugjdzQPYw1FT_GtTB0-oDJO2ZE76dqb9t2Iy8BS3flM5fKeS7G-BJO4Fx3LTn4gz9g57ykldZb9Oc1rp8_AP0ZgfIZu6ZOu9zmTe7XyxjaaXjE7w_B-3CbbR3fifuujFvXMQVJtQ_eeJP3VrbLgwM6UpOIFZD4szBFvFH55zm-2H5ODOc4nBXOvLYq8uLPa1CcjFdQRTY0HJiNR1SGDMrHwaxn_WRu5TtjdJah8_6pWb6d3Je7qJNNudEkiNrUrvk-fAfEYfyns8mRm7jxOwWNumgXcbpD7StEBgIy46bvKJ9eUlvLUIDOi1bBBOfKPKT3wZx1WbexrWucHc4Cu_CahhMb471Y6XIUMcITBjLPVs_P8jOeKdhCKe5ne5z00wAh6JwVV7OR2MQ8R8oQqPDg1r6stNLfy2g_91Vsf_0U-3_KZI41DPk4tYAuzWtRNKxUZUGsTnFC9FiMfLF_8O0XjpTT3a7VSC06R9cJ8rpW-y28IKoaO2U8ffMXS8iUHpdXaaN4WCxfINr21_z17rvBLCx3BzjSpvTm1wQguHg1GF0H4YaiBR5sLrhTzBD6SyIFNDbeA1lAt6hj-U81vJerBZ4_8z4Y7XpMSV7IB9hvjGIOjpEQJy209JGY2J_eZ2tzBE1TwDWAVINBN9HnylzI1P--QVBlTlQPiwrWG2jDwwIUysIEK6lbIz3TGMO9CCn7oTJFEP6khdD3wtiU4oaTJnLcxrp_quQjs1reODR1-Yb9cA8bv2keygMtZonJGK0dVIpH19V2Fcor6-P5sRRo"> <button type="submit" id="btn-signup" class="btn btn-alt btn-full pull-right btnGSubmit" style="border-radius: 50px !important; visibility: visible;">Sign Up</button> </fieldset> </form>
+                                    <form method="post" id="signup_form" onsubmit="return true;" action=""> 
+                                        <fieldset class="form-group"> Already have an account? 
+                                            <a href="login.html" style="color: #46bdf4;">Sign in here!</a> 
+                                        </fieldset> 
+                                        <label id="result-signup" class="result"></label> 
+                                        <fieldset class="form-group"> 
+                                            <label class="mandatory">Your Name</label> 
+                                            <div class="form-input"> 
+                                                <input type="text" id="sfirstname" name="firstname" class="form-control input-sm required" required=""> 
+                                            </div> 
+                                        </fieldset> 
+                                        <fieldset class="form-group" hidden=""> 
+                                            <label class="mandatory">Last Name</label> 
+                                            <div class="form-input"> 
+                                                <input type="text" id="slastname" value="x" name="lastname" class="form-control input-sm"> 
+                                            </div> 
+                                        </fieldset> 
+                                        <fieldset class="form-group"> 
+                                            <label class="mandatory">Your email</label> 
+                                            <div class="form-input"> 
+                                                <input type="email" id="email" name="email" class="form-control input-sm required" pattern="^[^+]+@[^+]+\.[^+]+$" required=""> 
+                                            </div> 
+                                        </fieldset> 
+                                        <fieldset class="form-group"> 
+                                            <label class="mandatory">Password</label> 
+                                            <div class="form-input"> 
+                                                <input type="password" id="spassword" name="spassword" class="form-control input-sm" title="Set a strong password" value=""> 
+                                                <span toggle="#spassword" class="fa fa-fw fa-eye field-icon toggle-password"></span> 
+                                            </div> 
+                                        </fieldset> 
+                                        <div id="message" hidden=""> 
+                                            <p style="color:red">Password must contain the following:</p> 
+                                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p> 
+                                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p> 
+                                            <p id="number" class="invalid">A <b>number</b></p> 
+                                            <p id="length" class="invalid">Minimum <b>8 characters</b>
+                                            </p> 
+                                        </div> 
+                                        <fieldset class="form-group" hidden=""> 
+                                            <label class="mandatory">Re-enter Password</label> 
+                                            <div class="form-input"> 
+                                                <input type="password" id="scpassword" name="scpassword" class="form-control input-sm" value="xX000000"> 
+                                                <span toggle="#scpassword" class="fa fa-fw fa-eye field-icon toggle-password"></span> 
+                                            </div> 
+                                        </fieldset> 
+                                        <fieldset class="form-group"> 
+                                            <label>Referral Code</label> 
+                                            <div class="form-input"> 
+                                                <input type="text" id="refer" name="refer" maxlength="10" placeholder="10 digits" class="form-control input-sm"> 
+                                                <label id="result-refer" class="error"></label> 
+                                            </div> 
+                                        </fieldset> 
+                                        <div hidden="">
+                                            <input type="checkbox" name="t&amp;c" style="height:15px; width:15px;" checked="" hidden=""> 
+                                            I have read, understood and agreed 
+                                            <a href="#" target="_blank">Terms and Conditions</a>
+                                        </div>
+                                        <fieldset class="form-group mt20"> 
+                                            <input type="hidden" name="gcaptcha" id="gcaptcha" class="gcaptcha" value=""> 
+                                            <button type="submit" id="btn-signup" class="btn btn-alt btn-full pull-right btnGSubmit" style="border-radius: 50px !important; visibility: visible;">Sign Up</button> 
+                                        </fieldset> 
+                                    </form>
                                 </div>
                             </div>
                         </div>

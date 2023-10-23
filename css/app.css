@@ -1,4 +1,3 @@
-
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /*normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -35,6 +34,10 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
+@font-face {
+  font-family: Orbitron-VariableFont_wght;
+  src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
 
 body {
     margin: 0;
@@ -73,7 +76,7 @@ body {
   background-image: linear-gradient(180deg, transparent, #0c091b); */
 }
 /* register page css */
-  .card-content{
+.card-content{
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -89,7 +92,7 @@ body {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 0.3rem;
 
-  }
+}
   .col-md-12{
     padding-left: 15px;
     padding-right: 15px;
@@ -196,7 +199,7 @@ fieldset input {
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
-.btn.btn-alt {
+/* .btn.btn-alt {
   background-color: #00BF73;
   height: 60px;
   line-height: 54px;
@@ -206,8 +209,19 @@ fieldset input {
   min-width: 190px;
   box-shadow: none;
   border: none;
-}
+} */
 
+.btn.btn-alt {
+  background-color: #0094FD;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 30px;
+  min-width: 140px;
+  box-shadow: none;
+  border: none;
+  line-height: 30px;
+  color:#ffffff;
+}
 
   /* register page css */
 
@@ -429,6 +443,7 @@ video.fullscreen {
 
 .content h1{
   color: #ffffff;
+  font-family: Orbitron-VariableFont_wght;
 }
 
 .nav {
@@ -800,7 +815,7 @@ a {
 }
 .form-control {
   color: #000000;
-  min-height: 40px;
+  /* min-height: 40px; */
   display: initial;
 }
 
@@ -827,7 +842,7 @@ html body .m-t-5 {
   margin-top: 5px;
 }
 .btn {
-  /* padding: 7px 15px; */
+  padding: 7px 15px;
   color: #fff;
   font-size: 14px;
   border-radius: 25px !important;
@@ -1094,7 +1109,7 @@ html body .m-b-5 {
 /*================================================*/
 
 
-body {
+/* body {
   margin:0;
   font-family: var(--principal-font);
   font-size: 12px;
@@ -1102,7 +1117,7 @@ body {
 
   background: var(--bg-gradient);
   background-size: cover;
-}
+} */
 
 .card-wrapper {
   min-height: 100vh;
@@ -1110,14 +1125,14 @@ body {
   padding-top: 25px;
 }
 
-p {
+/* p {
   margin: 0 0 12px;
   line-height: 1.5;
 }
 
 h2 {
   margin: 12px 0;
-}
+} */
 
 
 /* generics */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     
 </head>
@@ -13,17 +14,12 @@
     <div class="mApp">
         <section class="header fix-header">
             <header class="header topbar">
-                <a href="" class="logo">
+                <a href="dashboard.html" class="logo" style="color: #000000;position: absolute;">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </a>
+                <a href="dashboard.html" class="logo">
                     <img src="img/SClogoHZBlack.png" alt="" srcset="" style="width: 180px;">
                 </a>
-                <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                  <li><a href="#work">Our Work</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#careers">Careers</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul> -->
               </header>
         </section>
         <section class="dashboard-content">
@@ -32,7 +28,9 @@
                 <div class="row mt-15">
                     <div class="col-md-12">
                         
-                        <div class="copy-ref-code sm"> <button id="copy-referral" class="btn btn-rounded btn-success" data-url="https://securechain.ai/?ref=1687780182" data-toggle="tooltip" title="" data-original-title="Click to copy Referral Code link" style="font-size:14px"> Copy Your Ref. Code <strong>1687780182</strong> </button> </div>
+                        <div class="copy-ref-code sm" style="text-align: center;"> 
+                            <button id="copy-referral" class="btn btn-rounded btn-success" data-url="https://securechain.ai/?ref=1687780182" data-toggle="tooltip" title="" data-original-title="Click to copy Referral Code link" style="font-size:14px"> Copy Your Ref. Code <strong>1687780182</strong> </button> 
+                        </div>
                         
                         <div class="card m-t-10"> 
                             <div class="card-body"> 
@@ -49,6 +47,52 @@
                     </div>
                 </div>
            </div>
+        </section>
+        <section class="footer">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                              <div id="content">
+                                <div id="horz-list">
+                                  <ul>
+                                      <li>
+                                          <a href="index.html">
+                                              <span><i class="fa fa-home" aria-hidden="true"></i>
+                                              </span>
+                                              <span>Home</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <span>
+                                                <img src="img/wallet-filled-money-tool.png" alt="" style="margin: auto;">
+                                              </span>
+                                              <span>Wallet</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <span>
+                                                <img src="img/stake.png" alt="" style="margin: auto;">
+                                              </span>
+                                              <span>Staking</span>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="#">
+                                              <span><i class="fa fa-user" aria-hidden="true"></i>
+                                              </span>
+                                              <span>Profile</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
     </div>
 </body>
