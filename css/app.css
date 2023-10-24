@@ -1392,6 +1392,10 @@ input.tgg-title {
   user-select: none;
 }
 
+.staking-content{
+  padding-bottom: 5rem !important;
+}
+
 /* tabs start css */
 
 
