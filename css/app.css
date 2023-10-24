@@ -255,11 +255,10 @@ fieldset input {
     color: #ffffff!important;
   }
 
-  .header a:first-child {
+  /* .header a:first-child {
     position: absolute;
-    /* top: -2px!important; */
   }
-  
+   */
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #f4f4f4;
@@ -733,6 +732,10 @@ body {
   background-color: #000c25;
   padding: 5px;
   border-radius: 5px;
+  /* margin: 15px 0; */
+}
+
+.header-title h3{
   margin: 15px 0;
 }
 
@@ -771,9 +774,14 @@ body {
 
 .dashboard-content{
   /* text-align: center; */
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 100px;
 }
+
+.earning-content{
+  padding-bottom: 100px;
+}
+
 .btn-success.ref-code {
   color: #fff;
   background-color: #0195ff;
@@ -1080,6 +1088,7 @@ html body .m-b-5 {
   width: 100%;
   box-shadow: 0 1px 3px rgb(0, 148, 254);
   display: table;
+  color: #ffffff;
 }
 
 
@@ -1208,7 +1217,7 @@ h2 {
 /*================================================*/
 
 .faq-content {
-  padding: 9px 25px 3rem; 
+  padding: 9px 25px 0px; 
 }
 
 .faq-content h1 {
@@ -1530,7 +1539,13 @@ input.tgg-title {
       margin: auto;
     }
   }
-
+  @media (max-width: 425px) {
+    .row-table .cell i {
+      font-size: 30px;
+      position: static;
+      top: 25px;
+    }
+  }
   @media(max-width: 320px){
     .badges .btn.btn-secondary {
       padding: 1px;
