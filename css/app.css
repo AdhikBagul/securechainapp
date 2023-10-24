@@ -49,8 +49,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
-    
+    color: #ffffff;
   }
 
   .mApp{
@@ -87,7 +86,7 @@ body {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: #000c25;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 0.3rem;
@@ -161,11 +160,11 @@ fieldset input {
   padding: 8px 15px!important;
   height: auto!important;
   line-height: normal!important;
-  border: 1px solid #CCC!important;
+  border: 1px solid #0094FD!important;
   border-radius: 50px!important;
   box-shadow: none!important;
   outline: 0!important;
-  color: #000!important;
+  color: #ffffff!important;
 }
 .form-control {
   display: block;
@@ -232,7 +231,7 @@ fieldset input {
   /* header */
   
   .header {
-    background-color: transparent;
+    background-color: #00000059;
     /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
     /* position: fixed; */
     width: 100%;
@@ -253,6 +252,12 @@ fieldset input {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: #ffffff!important;
+  }
+
+  .header a:first-child {
+    position: absolute;
+    /* top: -2px!important; */
   }
   
   .header li a:hover,
@@ -265,6 +270,7 @@ fieldset input {
     /* float: left; */
     font-size: 2em;
     padding: 10px 20px;
+    color: #ffffff!important;
     text-decoration: none;
   }
   
@@ -439,6 +445,7 @@ video.fullscreen {
   text-align: center;
   padding: 10px;
   margin: 16px auto;
+  color: #ffffff;
 }
 
 .content h1{
@@ -695,7 +702,7 @@ body {
 .half-circle-bg {
   height: 360px;
   width: 100%;
-  background-color: #0194fd;
+  background-color: #00000059;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   position: absolute;
@@ -706,7 +713,7 @@ body {
 .half-circle-bg-p {
   height: 153px;
   width: 100%;
-  background-color: #0194fd;
+  background-color: #00000059;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   position: absolute;
@@ -718,12 +725,12 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #000c25;
   padding: 10px;
   margin: auto;
 }
 .social-media-p{
-  background-color: white;
+  background-color: #000c25;
   padding: 5px;
   border-radius: 5px;
   margin: 15px 0;
@@ -737,12 +744,12 @@ body {
 	display: flow-root list-item;
 }
 .ul-vertical li {
-	background-color: #f1f1f1;
+	background-color: #161717;
 	width: 100%;
 	/* height: 30px; */
 	margin: 0;
 	padding: 5px;
-	border: 1px solid #f1f1f1;
+	border: 1px solid #0094fd;
 }
 .ul-vertical li+li {
 	margin-top: 8px;
@@ -754,17 +761,17 @@ body {
 
 .ul-vertical li a .flex-container .left-content{
   flex-grow: 5;
-  color: #000000;
+  color: #ffffff;
 }
 
 .ul-vertical li a .flex-container .right-content{
   flex-grow: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
 .dashboard-content{
   /* text-align: center; */
-  padding-top: 15px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 .btn-success.ref-code {
@@ -785,7 +792,7 @@ body {
   margin-bottom: 15px;
 }
 .card{
-  background-color: white;
+  background-color: #000c25;
   border-radius: 5px;
 }
 
@@ -806,10 +813,10 @@ a {
   padding: .375rem .75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #000000;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #0080ff;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -820,8 +827,8 @@ a {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #000000;
   border-color: #0195ff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem #0195ff73;
@@ -875,8 +882,8 @@ html body .m-t-5 {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background-color: #ffffff;
-  padding: 10px;
+  background-color: #000c25;
+  padding: 16px;
   margin: auto;
 }
 .center-ring{
@@ -897,8 +904,10 @@ html body .m-t-5 {
 .btn-notes {
   border-radius: 10px;
   border: none;
-  font-size: 17px;
-  background-color: white;
+  font-size: 16px;
+  background-color: #000c25;
+  padding: 10px;
+  color: #fff;
 }
 
 .mt-60{
@@ -962,7 +971,7 @@ html body .m-b-5 {
 /* footer */
 
 .footer{
-  background-color: #ffffff;
+  background-color: #00000059;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -1018,7 +1027,7 @@ html body .m-b-5 {
   display: inline;
 }
 
-#horz-list ul li a {
+/* #horz-list ul li a {
   text-decoration: none;
   padding: 0px 15px;
   border-right: 1px solid rgba(255, 255, 255, 0.8);
@@ -1026,7 +1035,18 @@ html body .m-b-5 {
   color: #000;
   font-size: 12px;
   display: inline-block;
+} */
+#horz-list ul li a {
+  text-decoration: none;
+  padding: 0px 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 0 0 0 -6px;
+  color: #dbd1d1;
+  font-size: 12px;
+  display: inline-block;
 }
+
+
 #horz-list ul li a span{
   display: grid;
 }
@@ -1040,9 +1060,8 @@ html body .m-b-5 {
 }
 
 #horz-list ul li a:hover {
-  background: rgba(255, 255, 255, 0.8);
-  color: #007bff;;
-
+  /* background: rgba(255, 255, 255, 0.8); */
+  color: #007bff;
 }
 
 /* Earning page */
@@ -1059,7 +1078,7 @@ html body .m-b-5 {
 .table {
   margin: 0 0 40px 0;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgb(0, 148, 254);
   display: table;
 }
 
@@ -1072,10 +1091,19 @@ html body .m-b-5 {
 
 .row-table {
   display: table-row;
-  background: #f6f6f6;
+  background: #0000;
 }
+.row-table .cell{
+  position: relative;
+}
+.row-table .cell i{
+  font-size: 30px;
+  position: absolute;
+  top: 25px;
+}
+
 .row-table:nth-of-type(odd) {
-  background: #e9e9e9;
+  background: #013;
 }
 .row-table.header {
   font-weight: 900;
@@ -1148,13 +1176,10 @@ h2 {
 /*================================================*/
 
 .faq-card {
-
-  background-color: #fff;
+  background-color: #000c25;
   border-radius: 20px;
-
   max-width: 310px;
   margin-top: 90px;
-  
   box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
 }
 
@@ -1299,28 +1324,6 @@ input.tgg-title {
   width: 100%;
   margin-bottom: 0;
 } */
-.input-group .form-control {
-  /* display: block;
-  width: 100%; */
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgb(204, 204, 204);
-  border-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
 
 /* .input-group-btn {
   position: relative;
@@ -1333,7 +1336,14 @@ input.tgg-title {
   white-space: nowrap;
   vertical-align: middle;
 }
-
+.input-group-text{
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #0195ff;
+  border: 1px solid #0195ff;
+  cursor: pointer;
+}
 .input-group-addon, .input-group-btn, .input-group .form-control {
   display: table-cell;
 }
@@ -1424,6 +1434,66 @@ input.tgg-title {
     display: block;
   }
 }
+
+/* progress bar */
+
+
+.outer-ring .percent {
+  position: relative;
+}
+
+.outer-ring svg {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  transform: rotate(-90deg);
+}
+
+.outer-ring svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #676767;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.outer-ring svg circle:last-of-type {
+  stroke-dasharray: 625px;
+  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+  stroke: #0194fd; 
+}
+
+.outer-ring .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.outer-ring .number h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.outer-ring .number h3 span {
+  font-size: 2rem;
+}
+
+.outer-ring .title h2 {
+  margin: 25px 0 0;
+}
+
+.outer-ring:nth-child(1) svg circle:last-of-type {
+  stroke: #0194fd;
+}
+
+.mining-btn{
+  width: 100%;
+}
+
+
 
 
   /* table css */
