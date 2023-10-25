@@ -979,7 +979,7 @@ html body .m-b-5 {
 /* footer */
 
 .footer{
-  background-color: #00000059;
+  background-color: #000c25;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -1047,7 +1047,7 @@ html body .m-b-5 {
 #horz-list ul li a {
   text-decoration: none;
   padding: 0px 15px;
-  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  /* border-right: 1px solid rgba(255, 255, 255, 0.8); */
   margin: 0 0 0 -6px;
   color: #dbd1d1;
   font-size: 12px;
